@@ -5,15 +5,19 @@ A personal librarian plugin for [Cowork](https://claude.com/product/cowork), Ant
 ## Installation
 
 ```
-claude plugins add achriom
+claude plugin marketplace add achriom/achriom-claude-plugin
+claude plugin install achriom@achriom
 ```
 
 ## Quick Start
 
 ### 1. Install the plugin
 
+Add the marketplace and install:
+
 ```
-claude plugins add achriom
+claude plugin marketplace add achriom/achriom-claude-plugin
+claude plugin install achriom@achriom
 ```
 
 ### 2. Connect your collection
@@ -41,11 +45,11 @@ The librarian activates automatically. Ask about your collection, request recomm
 
 | Command | Description |
 |---------|-------------|
-| `/recommend` | Get a personalized recommendation based on mood, theme, or similarity |
-| `/deep-dive` | Full analysis of a specific book, film, album, show, or anime |
-| `/discover` | Trace a theme, mood, or idea across your entire collection |
-| `/research` | Enter focused research mode on a curated subset of items |
-| `/collection-review` | Full audit — patterns, taste profile, gaps, and what your library says about you |
+| `/achriom:recommend` | Get a personalized recommendation based on mood, theme, or similarity |
+| `/achriom:deep-dive` | Full analysis of a specific book, film, album, show, or anime |
+| `/achriom:discover` | Trace a theme, mood, or idea across your entire collection |
+| `/achriom:research` | Enter focused research mode on a curated subset of items |
+| `/achriom:collection-review` | Full audit — patterns, taste profile, gaps, and what your library says about you |
 
 ## Skills
 
@@ -67,7 +71,7 @@ The librarian activates automatically. Ask about your collection, request recomm
 ### Get a Recommendation
 
 ```
-You: /recommend I'm in a melancholy mood
+You: /achriom:recommend something cozy and soothing
 
 Librarian: [Checks your collection, finds unread/unwatched items that match,
  plays a track preview from a matching album, embeds a trailer for a film,
@@ -77,7 +81,7 @@ Librarian: [Checks your collection, finds unread/unwatched items that match,
 ### Go Deep on Something
 
 ```
-You: /deep-dive why is Kid A so divisive?
+You: /achriom:deep-dive why is Kid A so divisive?
 
 Librarian: [Pulls album details, plays tracks inline, finds video essays
  on YouTube, connects to other items in your collection that share DNA,
@@ -87,7 +91,7 @@ Librarian: [Pulls album details, plays tracks inline, finds video essays
 ### Trace a Theme
 
 ```
-You: /discover loneliness
+You: /achriom:discover found family
 
 Librarian: [Searches across all media types, maps where the theme appears
  in books, films, albums, shows — finds cross-media connections,
@@ -97,7 +101,7 @@ Librarian: [Searches across all media types, maps where the theme appears
 ### Focused Research
 
 ```
-You: /research comparing my three Murakami novels
+You: /achriom:research comparing my three Murakami novels
 
 Librarian: [Enters contained mode, loads all three books, quotes passages,
  finds thematic overlaps and tensions, presents scholarly but
@@ -107,7 +111,7 @@ Librarian: [Enters contained mode, loads all three books, quotes passages,
 ### Full Collection Audit
 
 ```
-You: /collection-review
+You: /achriom:collection-review
 
 Librarian: [Maps entire collection, identifies thematic throughlines,
  analyzes taste evolution, spots blind spots, builds a taste profile,
@@ -145,7 +149,9 @@ The plugin works best with the MCP server connected. Without it, the librarian c
 
 ```
 achriom/
-├── .claude-plugin/plugin.json
+├── .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
 ├── .mcp.json
 ├── README.md
 ├── CONNECTORS.md
