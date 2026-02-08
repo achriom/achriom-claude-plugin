@@ -1,0 +1,15 @@
+{
+  "name": "achriom",
+  "owner": {
+    "name": "Achriom"
+  },
+  "metadata": {
+    "description": "Personal AI librarian for your media collection"
+  },
+  "plugins": [
+    {
+      "name": "achriom",
+      "source": "./"
+    }
+  ]
+}
