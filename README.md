@@ -1,175 +1,117 @@
-# Achriom — Personal Librarian Plugin
+# Achriom
 
-A personal librarian plugin for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Manages your media collection, analyzes what you read and watch, finds cross-media connections, and helps you decide what to pick up next.
+The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime — tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-## Installation
+**29 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
 
-```
-claude plugin marketplace add achriom/achriom-claude-plugin
-claude plugin install achriom@achriom
-```
+---
 
-## Quick Start
+## Claude / Cowork Plugin
 
-### 1. Install the plugin
+The full librarian experience — skills, slash commands, and your collection — in one install.
 
-Add the marketplace and install:
+### Install
 
-```
-claude plugin marketplace add achriom/achriom-claude-plugin
-claude plugin install achriom@achriom
-```
+In **Cowork** or **Claude Desktop**: go to Customize → Plugins → Browse, find Achriom, and click Install.
 
-### 2. Connect your collection
-
-The plugin requires the Achriom MCP server. Add your API key to `.mcp.json` (included with the plugin) or configure in your Claude settings:
-
-```json
-{
-  "mcpServers": {
-    "achriom": {
-      "type": "http",
-      "url": "https://mcp.achriom.com/mcp?api_key=YOUR_ACHRIOM_API_KEY"
-    }
-  }
-}
+In **Claude Code**:
+```bash
+claude plugins add achriom/achriom-mcp
 ```
 
-Get your API key at [achriom.com](https://achriom.com).
+When prompted, enter your Achriom API key. Get it from [Settings → Connect to AI Tools](https://app.achriom.com/settings). The key is stored securely and wired up automatically — no manual config needed.
 
-### 3. Start talking
+### What you get
 
-The librarian activates automatically. Ask about your collection, request recommendations, or go deep on something you love.
+**Skills** — activated automatically by the librarian based on context:
 
-## Commands
+| Skill | When it activates |
+|-------|-------------------|
+| `librarian` | Every conversation about your collection |
+| `book-analysis` | Literary analysis and author deep-dives |
+| `movie-analysis` | Film craft, directors, cinematography |
+| `music-analysis` | Albums, sound, production — always plays tracks |
+| `show-analysis` | Series structure, seasonal arcs, ensemble dynamics |
+| `anime-analysis` | Studios, sakuga, adaptation, cultural context |
+| `recommendations` | "What should I read/watch next?" questions |
+| `collection-insights` | Pattern recognition across your full library |
+| `focused-research` | Deep study on a curated subset of items |
+| `stop-slop` | Writing quality filter — always on |
+
+**Slash commands:**
 
 | Command | Description |
 |---------|-------------|
-| `/achriom:recommend` | Get a personalized recommendation based on mood, theme, or similarity |
+| `/achriom:recommend` | Personalized recommendation by mood, theme, or similarity |
 | `/achriom:deep-dive` | Full analysis of a specific book, film, album, show, or anime |
-| `/achriom:discover` | Trace a theme, mood, or idea across your entire collection |
-| `/achriom:research` | Enter focused research mode on a curated subset of items |
-| `/achriom:collection-review` | Full audit — patterns, taste profile, gaps, and what your library says about you |
+| `/achriom:discover` | Trace a theme or idea across your entire collection |
+| `/achriom:research` | Focused deep-study mode on a curated subset |
+| `/achriom:collection-review` | Full library audit — patterns, taste profile, gaps |
 
-## Skills
+---
 
-| Skill | Description |
-|-------|-------------|
-| `librarian` | Core persona — proactive, curious, demonstrates rather than describes |
-| `book-analysis` | Literary deep-dives — themes, author context, passages, connections |
-| `movie-analysis` | Film analysis — visual language, director style, cultural moment |
-| `music-analysis` | Album discussion — sound, production, artist evolution, always plays tracks |
-| `show-analysis` | TV series analysis — long-form storytelling, seasonal arcs, ensemble dynamics |
-| `anime-analysis` | Animation-specific — studios, sakuga, adaptation fidelity, cultural context |
-| `recommendations` | Cross-media recommendation methodology — mines your collection first |
-| `collection-insights` | Pattern recognition — themes, taste evolution, gaps, collection personality |
-| `focused-research` | Contained research mode — deep study of curated subsets |
-| `stop-slop` | Always active — eliminates AI writing patterns from every response |
+## Claude.ai Connector (Tools Only)
 
-## Example Workflows
+If you want just the MCP tools without the librarian skills and slash commands:
 
-### Get a Recommendation
+1. Go to **Settings → Connectors → Add custom connector**
+2. Name: **Achriom**
+3. URL: `https://mcp.achriom.com/mcp`
+4. Auth: **OAuth** — sign in with your Achriom account
 
-```
-You: /achriom:recommend something cozy and soothing
+This gives you all 29 tools directly in Claude.ai conversations, without the plugin's skills and commands.
 
-Librarian: [Checks your collection, finds unread/unwatched items that match,
- plays a track preview from a matching album, embeds a trailer for a film,
- connects recommendations to things you've rated highly]
-```
+---
 
-### Go Deep on Something
+## ChatGPT
 
-```
-You: /achriom:deep-dive why is Kid A so divisive?
+Requires Developer Mode (Plus or Pro).
 
-Librarian: [Pulls album details, plays tracks inline, finds video essays
- on YouTube, connects to other items in your collection that share DNA,
- incorporates your rating and notes]
-```
+1. **Settings → Apps** → Enable Developer mode
+2. **Settings → Connectors** → Create
+3. Name: **Achriom**, URL: `mcp.achriom.com/mcp`
+4. Auth: **OAuth** → sign in with your Achriom account
 
-### Trace a Theme
+---
+
+## Other MCP Clients
+
+For Cursor, Windsurf, and any HTTP MCP client:
 
 ```
-You: /achriom:discover found family
-
-Librarian: [Searches across all media types, maps where the theme appears
- in books, films, albums, shows — finds cross-media connections,
- surfaces surprising pairings, identifies gaps]
+https://mcp.achriom.com/mcp?api_key=YOUR_KEY
 ```
 
-### Focused Research
+Get your key from [account settings](https://app.achriom.com/settings).
 
-```
-You: /achriom:research comparing my three Murakami novels
+Ready-made config files: [examples/](examples/) (Claude Desktop, Cursor, VS Code).
 
-Librarian: [Enters contained mode, loads all three books, quotes passages,
- finds thematic overlaps and tensions, presents scholarly but
- accessible analysis]
-```
+---
 
-### Full Collection Audit
+## What the Tools Do
 
-```
-You: /achriom:collection-review
+- **Search** — by title, creator, genre, theme, mood, or rating
+- **Item details** — full metadata with AI analysis and your notes
+- **Collection stats** — patterns across ratings, genres, themes, eras
+- **Read and write** — update ratings, status, notes from any client
+- **Apple Music previews** — 30-second samples inline
+- **YouTube search** — trailers, interviews, video essays
+- **Book search** — semantic search inside uploaded EPUBs and PDFs
 
-Librarian: [Maps entire collection, identifies thematic throughlines,
- analyzes taste evolution, spots blind spots, builds a taste profile,
- suggests what to bump up the backlog queue]
-```
+Full reference: [docs/TOOLS.md](docs/TOOLS.md) · [docs/PROMPTS.md](docs/PROMPTS.md)
 
-### Natural Conversation
+---
 
-The librarian also works without commands — just talk:
+## Requirements
 
-- "What should I read next?" — recommendations skill activates
-- "What makes Dune so good?" — book-analysis skill activates
-- "Play something from OK Computer" — music-analysis skill plays tracks
-- "What patterns do you see in my library?" — collection-insights skill activates
+Free Achriom account required. MCP access included on all plans. Pro removes the 50-message cap.
 
-## Media Types
+[Sign up](https://app.achriom.com/signup) · [Settings](https://app.achriom.com/settings) · [Support](mailto:hello@achriom.com)
 
-| Type | Source | Capabilities |
-|------|--------|-------------|
-| `book` | Open Library | Search, details, uploaded book content search |
-| `movie` | TMDB | Search, details, YouTube video essays |
-| `show` | TMDB | Search, details, cast interviews |
-| `album` | Discogs + Apple Music | Search, details, track previews, live performances |
-| `anime` | AniList | Search, details, openings, sakuga analysis |
+---
 
-## MCP Integration
+## Find Us
 
-> See [CONNECTORS.md](CONNECTORS.md) for the full list of tools provided by the Achriom MCP server.
-
-The plugin connects to your collection through the Achriom MCP server, which provides 26 tools across collection management, search, ratings, behavioral intelligence, book content, media playback, and research mode.
-
-The plugin works best with the MCP server connected. Without it, the librarian can still discuss media using its general knowledge, but cannot access your personal collection.
-
-## File Structure
-
-```
-achriom/
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── .mcp.json
-├── README.md
-├── CONNECTORS.md
-├── commands/
-│   ├── recommend.md
-│   ├── deep-dive.md
-│   ├── discover.md
-│   ├── research.md
-│   └── collection-review.md
-└── skills/
-    ├── librarian/SKILL.md
-    ├── book-analysis/SKILL.md
-    ├── movie-analysis/SKILL.md
-    ├── music-analysis/SKILL.md
-    ├── show-analysis/SKILL.md
-    ├── anime-analysis/SKILL.md
-    ├── recommendations/SKILL.md
-    ├── collection-insights/SKILL.md
-    ├── focused-research/SKILL.md
-    └── stop-slop/SKILL.md
-```
+- [Smithery](https://smithery.ai/servers/achriom/achriom)
+- [Glama](https://glama.ai/mcp/connectors/com.achriom.mcp/achriom)
+- [MCP.so](https://mcp.so/server/achriom/achriom)
