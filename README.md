@@ -98,7 +98,7 @@ Get your key from [account settings](https://app.achriom.com/settings).
 
 Free Achriom account required. MCP access included on all plans. Pro removes the 50-message cap.
 
-[Sign up](https://app.achriom.com/signup) · [Settings](https://app.achriom.com/settings) · [Support](mailto:hello@achriom.com)
+[Sign up](https://app.achriom.com/login) · [Settings](https://app.achriom.com/settings) · [Support](mailto:hello@achriom.com)
 
 ---
 
