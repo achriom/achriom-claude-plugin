@@ -65,12 +65,7 @@ This gives you all 35 tools directly in Claude.ai conversations, without the plu
 
 ## ChatGPT
 
-Requires Developer Mode (Plus or Pro).
-
-1. **Settings → Apps** → Enable Developer mode
-2. **Settings → Connectors** → Create
-3. Name: **Achriom**, URL: `mcp.achriom.com/mcp`
-4. Auth: **OAuth** → sign in with your Achriom account
+Install the official Achriom app from the [ChatGPT app store](https://chatgpt.com/apps/achriom/asdk_app_698a63a87aa081918a6532ccf4cbc1a1).
 
 ---
 
