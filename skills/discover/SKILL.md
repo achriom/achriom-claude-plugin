@@ -132,7 +132,6 @@ Frame as invitation, not criticism.]
 "You've explored [theme] through [angle], but there's a whole tradition
 of [unexplored angle] you might find interesting — [1-2 specific suggestions]."
 
-<!-- SUGGESTIONS: Go deeper on [strongest connection] | Find me something new in this vein | What other themes run through my collection? -->
 ```
 
 ## Notes

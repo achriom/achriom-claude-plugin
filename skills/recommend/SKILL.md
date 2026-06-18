@@ -116,7 +116,6 @@ Reference actual items in their collection as connection points.]
 ### The Stretch Pick: [Title 3]
 [Same structure but frame as expanding their range]
 
-<!-- SUGGESTIONS: Tell me more about [title] | Play more from [artist] | What else connects to this theme? -->
 ```
 
 ## Notes

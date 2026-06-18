@@ -79,5 +79,4 @@ Be scholarly but accessible. Use quotes from the works. Make connections explici
 End responses with research-oriented prompts:
 
 ```
-<!-- SUGGESTIONS: Compare how X and Y approach [theme] | Find passages about [concept] | What's the timeline of these ideas? -->
 ```

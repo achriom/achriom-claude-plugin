@@ -143,7 +143,6 @@ What would be lost if you studied any one of them alone?]
 
 [What this research raises but doesn't resolve. Invitations for further exploration.]
 
-<!-- SUGGESTIONS: Find passages about [concept] in [book] | Compare how [item A] and [item B] handle [theme] | Expand the corpus with [suggested addition] -->
 ```
 
 ## Notes

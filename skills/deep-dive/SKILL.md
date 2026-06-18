@@ -139,7 +139,6 @@ Reference specific scenes, tracks, chapters, episodes.]
 [If they have ratings or notes, reflect them back. "You rated this 5/5 — and given
 your notes about [X], I think what grabbed you was..."]
 
-<!-- SUGGESTIONS: Compare this to [related title] | What influenced [creator]? | Find me something with the same energy -->
 ```
 
 ## Notes

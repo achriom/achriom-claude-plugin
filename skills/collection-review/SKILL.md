@@ -154,7 +154,6 @@ to be bumped up the queue given recent taste?]
 > **In a sentence:** [One-line characterization — "You're drawn to stories about
 > [theme] told through [style], with a blind spot for [gap] and a soft spot for [weakness]"]
 
-<!-- SUGGESTIONS: Go deeper on [strongest theme] | What should I read/watch next based on this? | Compare my taste across decades -->
 ```
 
 ## Notes
