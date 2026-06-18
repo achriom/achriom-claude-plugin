@@ -1,15 +1,24 @@
 {
   "name": "achriom",
+  "description": "Personal AI librarian for your media collection",
   "owner": {
-    "name": "Achriom"
-  },
-  "metadata": {
-    "description": "Personal AI librarian for your media collection"
+    "name": "Achriom",
+    "email": "hello@achriom.com"
   },
   "plugins": [
     {
       "name": "achriom",
-      "source": "./"
+      "displayName": "Achriom",
+      "source": "./",
+      "description": "Personal librarian for your media collection. Deep analysis of books, movies, albums, TV shows, and anime with cross-media recommendations and pattern recognition.",
+      "author": {
+        "name": "Achriom",
+        "email": "hello@achriom.com"
+      },
+      "homepage": "https://achriom.com",
+      "repository": "https://github.com/achriom/achriom-claude-plugin",
+      "keywords": ["books", "movies", "music", "tv", "anime", "media", "library", "recommendations"],
+      "category": "productivity"
     }
   ]
 }
