@@ -8,13 +8,21 @@
   },
   "homepage": "https://achriom.com",
   "repository": "https://github.com/achriom/achriom-claude-plugin",
-  "keywords": ["books", "movies", "music", "tv", "anime", "media", "library", "recommendations"],
-  "outputStyles": "output-styles",
+  "keywords": [
+    "books",
+    "movies",
+    "music",
+    "tv",
+    "anime",
+    "media",
+    "library",
+    "recommendations"
+  ],
   "userConfig": {
     "api_key": {
       "type": "string",
       "title": "Achriom API key",
-      "description": "Your Achriom API key. Get it from achriom.com → Settings → Connect to AI Tools",
+      "description": "Your Achriom API key. Get it from achriom.com \u2192 Settings \u2192 Connect to AI Tools",
       "sensitive": true,
       "required": true
     }
