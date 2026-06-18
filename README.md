@@ -2,7 +2,7 @@
 
 The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime — tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-**29 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
+**35 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
 
 ---
 
@@ -16,7 +16,7 @@ In **Cowork** or **Claude Desktop**: go to Customize → Plugins → Browse, fin
 
 In **Claude Code**:
 ```bash
-claude plugins add achriom/achriom-mcp
+claude plugins add achriom/achriom-claude-plugin
 ```
 
 When prompted, enter your Achriom API key. Get it from [Settings → Connect to AI Tools](https://app.achriom.com/settings). The key is stored securely and wired up automatically — no manual config needed.
@@ -59,7 +59,7 @@ If you want just the MCP tools without the librarian skills and slash commands:
 3. URL: `https://mcp.achriom.com/mcp`
 4. Auth: **OAuth** — sign in with your Achriom account
 
-This gives you all 29 tools directly in Claude.ai conversations, without the plugin's skills and commands.
+This gives you all 35 tools directly in Claude.ai conversations, without the plugin's skills and commands.
 
 ---
 
@@ -84,8 +84,6 @@ https://mcp.achriom.com/mcp?api_key=YOUR_KEY
 
 Get your key from [account settings](https://app.achriom.com/settings).
 
-Ready-made config files: [examples/](examples/) (Claude Desktop, Cursor, VS Code).
-
 ---
 
 ## What the Tools Do
@@ -93,12 +91,11 @@ Ready-made config files: [examples/](examples/) (Claude Desktop, Cursor, VS Code
 - **Search** — by title, creator, genre, theme, mood, or rating
 - **Item details** — full metadata with AI analysis and your notes
 - **Collection stats** — patterns across ratings, genres, themes, eras
-- **Read and write** — update ratings, status, notes from any client
+- **Read and write** — update ratings, status, notes, format, priority, and progress from any client
+- **Edit and delete** — correct metadata, remove items, re-fetch AI analysis
 - **Apple Music previews** — 30-second samples inline
 - **YouTube search** — trailers, interviews, video essays
 - **Book search** — semantic search inside uploaded EPUBs and PDFs
-
-Full reference: [docs/TOOLS.md](docs/TOOLS.md) · [docs/PROMPTS.md](docs/PROMPTS.md)
 
 ---
 

@@ -32,6 +32,11 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__show_item
   - mcp__plugin_achriom_achriom__search_conversations
   - mcp__plugin_achriom_achriom__save_insight
+  - mcp__plugin_achriom_achriom__search_library
+  - mcp__plugin_achriom_achriom__set_format
+  - mcp__plugin_achriom_achriom__set_priority
+  - mcp__plugin_achriom_achriom__set_progress
+  - mcp__plugin_achriom_achriom__log_event
 ---
 
 # Personal Librarian
@@ -87,6 +92,14 @@ Always use MCP tools — never rely on memory or assumptions about the collectio
 | Past conversation history | `search_conversations(query)` |
 | Save a research note | `save_insight(title, content)` |
 | Focused research on a subset | `get_scope_info()` then `expand_research_scope(item_ids)` |
+| Search across all media types at once | `search_library(query)` |
+| Edit item metadata | `edit_item(media_type, title, fields)` |
+| Remove from collection | `delete_item(media_type, title)` |
+| Re-fetch metadata and AI analysis | `re_enrich(media_type, title)` |
+| Batch status update | `bulk_update_status([{media_type, title, status}, ...])` |
+| Set format (hardcover, ebook, audiobook…) | `set_format(media_type, title, format)` |
+| Set priority in queue | `set_priority(media_type, title, priority)` |
+| Track reading/watching progress | `set_progress(media_type, title, progress)` |
 
 ## Skill Activation
 
