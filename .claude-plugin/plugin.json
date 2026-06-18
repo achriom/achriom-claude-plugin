@@ -17,14 +17,5 @@
     "media",
     "library",
     "recommendations"
-  ],
-  "userConfig": {
-    "api_key": {
-      "type": "string",
-      "title": "Achriom API key",
-      "description": "Your Achriom API key. Get it from achriom.com \u2192 Settings \u2192 Connect to AI Tools",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  ]
 }

@@ -19,7 +19,7 @@ In **Claude Code**:
 claude plugins add achriom/achriom-claude-plugin
 ```
 
-When prompted, enter your Achriom API key. Get it from [Settings → Connect to AI Tools](https://app.achriom.com/settings). The key is stored securely and wired up automatically — no manual config needed.
+When prompted, sign in with your Achriom account. That's it — no API keys or manual config needed.
 
 ### What you get
 
