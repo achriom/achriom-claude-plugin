@@ -2,24 +2,23 @@
 
 The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime — tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-**35 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
+**36 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
 
 ---
 
-## Claude / Cowork Plugin
+## Claude Plugin (Recommended)
 
 The full librarian experience — skills, slash commands, and your collection — in one install.
 
 ### Install
 
-In **Cowork** or **Claude Desktop**: go to Customize → Plugins → Browse, find Achriom, and click Install.
+In **claude.ai** or **Claude Desktop**: go to **Settings**, then **Plugins**, click **Add plugins**, and paste this URL:
 
-In **Claude Code**:
-```bash
-claude plugins add achriom/achriom-claude-plugin
+```
+https://github.com/achriom/achriom-claude-plugin.git
 ```
 
-When prompted, sign in with your Achriom account. That's it — no API keys or manual config needed.
+Sign in with your Achriom account when prompted. No API keys or manual config needed.
 
 ### What you get
 
@@ -30,7 +29,7 @@ When prompted, sign in with your Achriom account. That's it — no API keys or m
 | `librarian` | Every conversation about your collection |
 | `book-analysis` | Literary analysis and author deep-dives |
 | `movie-analysis` | Film craft, directors, cinematography |
-| `music-analysis` | Albums, sound, production — always plays tracks |
+| `music-analysis` | Albums, sound, production |
 | `show-analysis` | Series structure, seasonal arcs, ensemble dynamics |
 | `anime-analysis` | Studios, sakuga, adaptation, cultural context |
 | `recommendations` | "What should I read/watch next?" questions |
@@ -52,14 +51,18 @@ When prompted, sign in with your Achriom account. That's it — no API keys or m
 
 ## Claude.ai Connector (Tools Only)
 
-If you want just the MCP tools without the librarian skills and slash commands:
+MCP tools without the librarian skills and slash commands.
 
-1. Go to **Settings → Connectors → Add custom connector**
-2. Name: **Achriom**
-3. URL: `https://mcp.achriom.com/mcp`
-4. Auth: **OAuth** — sign in with your Achriom account
+1. Open **Settings** and go to **Connectors**
+2. Click **Add** and choose **Add custom connector**
+3. Enter a name (e.g. Achriom) and paste the URL below
+4. Click **Add**, then **Connect** to sign in with your Achriom account
 
-This gives you all 35 tools directly in Claude.ai conversations, without the plugin's skills and commands.
+```
+https://mcp.achriom.com/mcp
+```
+
+No API key needed — authentication is handled via OAuth.
 
 ---
 
@@ -71,7 +74,7 @@ Install the official Achriom app from the [ChatGPT app store](https://chatgpt.co
 
 ## Other MCP Clients
 
-For Cursor, Windsurf, and any HTTP MCP client:
+For Cursor, Windsurf, Claude Desktop, and any HTTP MCP client that does not support OAuth:
 
 ```
 https://mcp.achriom.com/mcp?api_key=YOUR_KEY
@@ -88,6 +91,9 @@ Get your key from [account settings](https://app.achriom.com/settings).
 - **Collection stats** — patterns across ratings, genres, themes, eras
 - **Read and write** — update ratings, status, notes, format, priority, and progress from any client
 - **Edit and delete** — correct metadata, remove items, re-fetch AI analysis
+- **Consumption tracking** — log re-reads, rewatches, and re-listens with dates
+- **Bulk operations** — add or update multiple items at once
+- **Random pick** — let the librarian choose something from your collection
 - **Apple Music previews** — 30-second samples inline
 - **YouTube search** — trailers, interviews, video essays
 - **Book search** — semantic search inside uploaded EPUBs and PDFs
