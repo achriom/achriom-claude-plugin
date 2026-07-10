@@ -14,9 +14,9 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__lookup_item
 ---
 
-# /deep-dive — Go Deep on Something
+# /deep-dive: Go Deep on Something
 
-Full analysis of a single item — themes, craft, context, connections. The kind of conversation you'd have with someone who's read, watched, or listened to the same thing and has something to say about it.
+Full analysis of a single item, themes, craft, context, connections. The kind of conversation you'd have with someone who's read, watched, or listened to the same thing and has something to say about it.
 
 ## Invocation
 
@@ -38,7 +38,7 @@ search(media_type, query="title or topic")
 get_details(media_type, title)
 ```
 
-If the item isn't in the collection, note that and offer to add it. Proceed with analysis either way — the librarian knows things beyond the shelf.
+If the item isn't in the collection, note that and offer to add it. Proceed with analysis either way, the librarian knows things beyond the shelf.
 
 If the user specified a particular angle ("the cinematography in..."), note that as the focus. Otherwise, let the analysis follow what's most interesting about the work.
 
@@ -100,11 +100,11 @@ get_context()                                    # broader behavioral context
 
 Draw from the appropriate analysis skill. Include:
 
-1. **What makes this work** — the craft, the choices, what elevates it
-2. **Context** — when it was made, what was happening, why it matters
-3. **Their relationship to it** — their rating, notes, status, when they added it
-4. **Collection connections** — other items that share DNA with this one
-5. **Something to experience** — embedded media (don't just describe, show)
+1. **What makes this work**: the craft, the choices, what elevates it
+2. **Context**: when it was made, what was happening, why it matters
+3. **Their relationship to it**: their rating, notes, status, when they added it
+4. **Collection connections**: other items that share DNA with this one
+5. **Something to experience**: embedded media (don't just describe, show)
 
 If the user asked about a specific angle, lead with that. Otherwise, lead with whatever is most interesting.
 
@@ -116,15 +116,15 @@ If the user asked about a specific angle, lead with that. Otherwise, lead with w
 ## [Title]
 [Cover/poster image]
 
-[Opening that immediately says something substantive — no preamble.
+[Opening that immediately says something substantive, no preamble.
 Lead with the most interesting observation about this work.]
 
-### [Angle 1 — e.g., "The Sound," "The Visual Language," "What It's Really About"]
+### [Angle 1: e.g., "The Sound," "The Visual Language," "What It's Really About"]
 
 [2-3 paragraphs of actual analysis. Quote the work where possible.
 Reference specific scenes, tracks, chapters, episodes.]
 
-[Embedded media — video essay, live performance, interview clip]
+[Embedded media, video essay, live performance, interview clip]
 
 ### [Angle 2]
 
@@ -133,10 +133,10 @@ Reference specific scenes, tracks, chapters, episodes.]
 ### In Your Collection
 
 [How this connects to other things they own. Specific titles, specific connections.
-"The same tension shows up in [other title] — but approached from the opposite direction."]
+"The same tension shows up in [other title], but approached from the opposite direction."]
 
 ### Your Notes
-[If they have ratings or notes, reflect them back. "You rated this 5/5 — and given
+[If they have ratings or notes, reflect them back. "You rated this 5/5, and given
 your notes about [X], I think what grabbed you was..."]
 
 ```
@@ -144,7 +144,7 @@ your notes about [X], I think what grabbed you was..."]
 ## Notes
 
 - For albums, ALWAYS play track previews. The analysis should be accompanied by the actual music.
-- For anime, embed the opening — it's often a work of art in itself
+- For anime, embed the opening, it's often a work of art in itself
 - If the user has notes on the item, incorporate them. Their perspective is part of the analysis.
 - Don't try to cover everything. Go deep on 2-3 angles rather than shallow on 8.
-- If the item isn't in their collection, the "In Your Collection" section becomes "What This Connects To" — reference items they DO own
+- If the item isn't in their collection, the "In Your Collection" section becomes "What This Connects To", reference items they DO own

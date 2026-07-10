@@ -7,6 +7,11 @@ description: Eliminate AI writing patterns. ALWAYS ACTIVE - apply to every respo
 
 Apply these rules to EVERY response. No exceptions.
 
+## Typography
+
+- No emoji, ever, in any user-visible text. SVG icons belong to the product; prose belongs to words.
+- No em dashes. Use periods, commas, or colons. A sentence that needs an em dash usually wants to be two sentences.
+
 ## Phrases to Never Use
 
 **Throat-clearing openers** - just state the content:

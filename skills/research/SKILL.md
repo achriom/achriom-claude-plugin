@@ -14,7 +14,7 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__save_insight
 ---
 
-# /research — Focused Research Mode
+# /research: Focused Research Mode
 
 Deep, contained research on a curated subset of your library. Select a few items, close the door, and study them together without distraction from the rest of the collection.
 
@@ -111,23 +111,23 @@ Frame as scholarly but accessible. Quote the works. Make connections explicit. E
 ```
 ## Research: [Topic or Theme]
 
-**Corpus:** [N] items — [brief list]
+**Corpus:** [N] items, [brief list]
 **Central question:** [What we're investigating]
 
 ---
 
-### [Finding 1 — The Core Insight]
+### [Finding 1: The Core Insight]
 
 [2-3 paragraphs developing the main insight from studying these items together.
 Quote from works where possible. Reference specific scenes, passages, tracks.]
 
 [Embedded media if relevant]
 
-### [Finding 2 — The Unexpected Connection]
+### [Finding 2: The Unexpected Connection]
 
 [Something that only becomes visible when you study these items side by side]
 
-### [Finding 3 — The Tension]
+### [Finding 3: The Tension]
 
 [Where these items disagree or approach the theme from opposing directions.
 Tensions are often more interesting than agreements.]
@@ -148,7 +148,7 @@ What would be lost if you studied any one of them alone?]
 ## Notes
 
 - Containment is sacred. Do not reference items outside the corpus unless the user asks to expand
-- The user drives corpus expansion — never proactively suggest adding items
+- The user drives corpus expansion, never proactively suggest adding items
 - If the corpus is just one item, this becomes a deep dive. Suggest `/deep-dive` instead, or proceed as a single-item study
-- For book-heavy corpora, lean heavily on `search_book_content()` — direct quotes make research tangible
+- For book-heavy corpora, lean heavily on `search_book_content()`, direct quotes make research tangible
 - End each response with prompts that push the research forward, not sideways

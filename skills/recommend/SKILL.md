@@ -19,9 +19,9 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__lookup_item
 ---
 
-# /recommend — What Should I Read / Watch / Listen To?
+# /recommend: What Should I Read / Watch / Listen To?
 
-Surface the right thing at the right time — from what you already own or something new worth adding.
+Surface the right thing at the right time, from what you already own or something new worth adding.
 
 ## Invocation
 
@@ -39,10 +39,10 @@ Surface the right thing at the right time — from what you already own or somet
 Determine what the user is after:
 
 - **Mood-based**: "I'm restless," "something comforting," "I want to feel unsettled"
-- **Similarity-based**: "something like [title]" — unpack what they loved about it
+- **Similarity-based**: "something like [title]", unpack what they loved about it
 - **Theme-based**: "stories about memory," "music about place"
 - **Cross-media**: "a book that pairs with [film]," "an album for reading [book]"
-- **Open-ended**: "what should I read next?" — use collection signals to decide
+- **Open-ended**: "what should I read next?", use collection signals to decide
 
 If the request is vague, ask one clarifying question. Only one. Then recommend.
 
@@ -69,9 +69,9 @@ Look for:
 Using the **recommendations** and **collection-insights** skills:
 
 For each recommendation (aim for 2-3):
-1. **Why this fits** — the specific connection to their request and taste
-2. **Something to sample** — play a track, embed a video, quote a passage
-3. **The thread** — how it connects to what they already love
+1. **Why this fits**: the specific connection to their request and taste
+2. **Something to sample**: play a track, embed a video, quote a passage
+3. **The thread**: how it connects to what they already love
 
 Prioritize in this order:
 1. Items they own but haven't explored yet
@@ -82,10 +82,10 @@ Prioritize in this order:
 ### Step 4: Make It Tangible
 
 Don't just name titles. Demonstrate:
-- For albums: `get_track_previews()` — play the music
-- For films/shows: `search_youtube()` — embed a trailer or video essay
+- For albums: `get_track_previews()`, play the music
+- For films/shows: `search_youtube()`, embed a trailer or video essay
 - For books: `search_book_content()` if available, or find an author interview
-- For anime: `search_youtube()` — embed the opening sequence
+- For anime: `search_youtube()`, embed the opening sequence
 
 ### Step 5: Present the Recommendations
 
@@ -96,10 +96,10 @@ Use the output format below. End with follow-up prompts that let them go deeper 
 ```
 ## Here's What I'd Reach For
 
-### [Title] — [Media Type]
+### [Title]: [Media Type]
 [Cover/poster image]
 
-[2-3 sentences on WHY this fits — specific to their request and taste.
+[2-3 sentences on WHY this fits, specific to their request and taste.
 Reference actual items in their collection as connection points.]
 
 [Embedded media: track preview, video, or passage]
@@ -108,7 +108,7 @@ Reference actual items in their collection as connection points.]
 
 ---
 
-### [Title 2] — [Media Type]
+### [Title 2]: [Media Type]
 [Same structure]
 
 ---
@@ -120,8 +120,8 @@ Reference actual items in their collection as connection points.]
 
 ## Notes
 
-- Never recommend something they've already rated highly — they know about it
+- Never recommend something they've already rated highly, they know about it
 - If recommending something they own but haven't consumed, acknowledge the unread/unwatched status directly
-- For cross-media recommendations, make the connection explicit — don't assume they'll see it
+- For cross-media recommendations, make the connection explicit, don't assume they'll see it
 - If nothing in the collection fits, say so honestly and research externally
 - Always include at least one item from their existing collection

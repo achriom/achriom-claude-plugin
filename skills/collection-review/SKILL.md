@@ -1,6 +1,6 @@
 ---
 name: collection-review
-description: Full audit of your collection — patterns, taste profile, gaps, and what your library says about you
+description: Full audit of your collection, patterns, taste profile, gaps, and what your library says about you
 argument-hint: "<optional focus area>"
 allowed-tools:
   - mcp__plugin_achriom_achriom__get_stats
@@ -14,7 +14,7 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__get_details
 ---
 
-# /collection-review — What Does Your Library Say About You?
+# /collection-review: What Does Your Library Say About You?
 
 A comprehensive review of your entire collection. Patterns, taste evolution, thematic clusters, blind spots, and the personality of your library.
 
@@ -85,7 +85,7 @@ Frame gaps as curiosity, not criticism: "You have deep coverage of [area] but al
 
 ### Step 4: Build the Taste Profile
 
-Synthesize everything into a profile — if this collection were a person, who would they be? What preoccupies them? What do they reach for when they need comfort vs. when they want to be challenged?
+Synthesize everything into a profile, if this collection were a person, who would they be? What preoccupies them? What do they reach for when they need comfort vs. when they want to be challenged?
 
 ### Step 5: Present the Review
 
@@ -94,7 +94,7 @@ Synthesize everything into a profile — if this collection were a person, who w
 ```
 ## Your Library
 
-**[N] items** across [media types] — [one-line characterization of the collection's personality]
+**[N] items** across [media types], [one-line characterization of the collection's personality]
 
 ---
 
@@ -110,18 +110,18 @@ Synthesize everything into a profile — if this collection were a person, who w
 
 ### What Your Collection Says
 
-[2-3 paragraphs characterizing the collection's personality. Be specific —
+[2-3 paragraphs characterizing the collection's personality. Be specific , 
 reference actual titles. This should feel like an observation about the person,
 not a database summary.]
 
 ### The Throughlines
 
-**[Theme 1]** — appears in [Title A] (book), [Title B] (film), [Title C] (album)
+**[Theme 1]**: appears in [Title A] (book), [Title B] (film), [Title C] (album)
 [1-2 sentences on how this theme manifests differently across media]
 
-**[Theme 2]** — [same structure]
+**[Theme 2]**: [same structure]
 
-**[Theme 3]** — [same structure]
+**[Theme 3]**: [same structure]
 
 ### Your Favorites Tell a Story
 
@@ -151,7 +151,7 @@ to be bumped up the queue given recent taste?]
 
 ### Taste Profile
 
-> **In a sentence:** [One-line characterization — "You're drawn to stories about
+> **In a sentence:** [One-line characterization, "You're drawn to stories about
 > [theme] told through [style], with a blind spot for [gap] and a soft spot for [weakness]"]
 
 ```
@@ -159,7 +159,7 @@ to be bumped up the queue given recent taste?]
 ## Notes
 
 - The collection review is the most data-intensive command. Pull everything before synthesizing.
-- Specific titles make this feel real. "You like dark stories" is useless. "You gave 5 stars to No Country for Old Men, Blood Meridian, and There Will Be Blood — you're drawn to the American West as a space where morality dissolves" is an insight.
+- Specific titles make this feel real. "You like dark stories" is useless. "You gave 5 stars to No Country for Old Men, Blood Meridian, and There Will Be Blood, you're drawn to the American West as a space where morality dissolves" is an insight.
 - The taste profile sentence at the end should feel like a revelation, not a summary
 - If the collection is small (under 20 items), note that patterns will be provisional
 - For very large collections, focus on the signal (high ratings, recent additions) rather than trying to characterize everything

@@ -1,6 +1,6 @@
 # Achriom
 
-The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime — tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
+The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime, tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
 **36 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
 
@@ -8,7 +8,7 @@ The media memory layer for AI agents and their humans. Books, movies, albums, TV
 
 ## Claude Plugin (Recommended)
 
-The full librarian experience — skills, slash commands, and your collection — in one install.
+The full librarian experience, skills, slash commands, and your collection, in one install.
 
 ### Install
 
@@ -22,7 +22,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 
 ### What you get
 
-**Skills** — activated automatically by the librarian based on context:
+**Skills**: activated automatically by the librarian based on context:
 
 | Skill | When it activates |
 |-------|-------------------|
@@ -35,7 +35,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | `recommendations` | "What should I read/watch next?" questions |
 | `collection-insights` | Pattern recognition across your full library |
 | `focused-research` | Deep study on a curated subset of items |
-| `stop-slop` | Writing quality filter — always on |
+| `stop-slop` | Writing quality filter, always on |
 
 **Slash commands:**
 
@@ -45,7 +45,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | `/achriom:deep-dive` | Full analysis of a specific book, film, album, show, or anime |
 | `/achriom:discover` | Trace a theme or idea across your entire collection |
 | `/achriom:research` | Focused deep-study mode on a curated subset |
-| `/achriom:collection-review` | Full library audit — patterns, taste profile, gaps |
+| `/achriom:collection-review` | Full library audit, patterns, taste profile, gaps |
 
 ---
 
@@ -62,7 +62,7 @@ MCP tools without the librarian skills and slash commands.
 https://mcp.achriom.com/mcp
 ```
 
-No API key needed — authentication is handled via OAuth.
+No API key needed, authentication is handled via OAuth.
 
 ---
 
@@ -86,17 +86,17 @@ Get your key from [account settings](https://app.achriom.com/settings).
 
 ## What the Tools Do
 
-- **Search** — by title, creator, genre, theme, mood, or rating
-- **Item details** — full metadata with AI analysis and your notes
-- **Collection stats** — patterns across ratings, genres, themes, eras
-- **Read and write** — update ratings, status, notes, format, priority, and progress from any client
-- **Edit and delete** — correct metadata, remove items, re-fetch AI analysis
-- **Consumption tracking** — log re-reads, rewatches, and re-listens with dates
-- **Bulk operations** — add or update multiple items at once
-- **Random pick** — let the librarian choose something from your collection
-- **Apple Music previews** — 30-second samples inline
-- **YouTube search** — trailers, interviews, video essays
-- **Book search** — semantic search inside uploaded EPUBs and PDFs
+- **Search**: by title, creator, genre, theme, mood, or rating
+- **Item details**: full metadata with AI analysis and your notes
+- **Collection stats**: patterns across ratings, genres, themes, eras
+- **Read and write**: update ratings, status, notes, format, priority, and progress from any client
+- **Edit and delete**: correct metadata, remove items, re-fetch AI analysis
+- **Consumption tracking**: log re-reads, rewatches, and re-listens with dates
+- **Bulk operations**: add or update multiple items at once
+- **Random pick**: let the librarian choose something from your collection
+- **Apple Music previews**: 30-second samples inline
+- **YouTube search**: trailers, interviews, video essays
+- **Book search**: semantic search inside uploaded EPUBs and PDFs
 
 ---
 
