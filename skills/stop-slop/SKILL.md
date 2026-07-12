@@ -51,6 +51,7 @@ Apply these rules to EVERY response. No exceptions.
 - BAD: "Not because X. Because Y."
 - BAD: "[X] isn't the problem. [Y] is."
 - BAD: "It's not X, it's Y." / "The X isn't Y. It's Z."
+- BAD: the verb-echo variant: "The makeover never fixed the girl. It fixed the audience."
 - BAD: "not just X" appositives ("everything, not just books")
 - GOOD: "The problem is Y." Make the bigger claim positively: name what it IS.
 
