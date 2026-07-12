@@ -47,10 +47,14 @@ Apply these rules to EVERY response. No exceptions.
 
 ## Structures to Avoid
 
-**Binary contrasts** - state the point directly:
+**Binary contrasts and the negation-pivot** - the single most recognized AI tell (The Atlantic wrote it up; commenters screenshot it). State the point directly:
 - BAD: "Not because X. Because Y."
 - BAD: "[X] isn't the problem. [Y] is."
-- GOOD: "The problem is Y."
+- BAD: "It's not X, it's Y." / "The X isn't Y. It's Z."
+- BAD: "not just X" appositives ("everything, not just books")
+- GOOD: "The problem is Y." Make the bigger claim positively: name what it IS.
+
+**Repeated sentence skeletons** - if two nearby lines share a shape ("Both know that...", "Both ask if..."), rewrite one. Readers spot the template before they read the words.
 
 **Dramatic fragmentation** - use complete sentences:
 - BAD: "[Noun]. That's it. That's the [thing]."
