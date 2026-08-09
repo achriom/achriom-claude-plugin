@@ -19,7 +19,7 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__lookup_item
 ---
 
-# /recommend: What Should I Read / Watch / Listen To?
+# /recommend: What Should I Read / Watch / Listen To / Play?
 
 Surface the right thing at the right time, from what you already own or something new worth adding.
 
@@ -86,6 +86,7 @@ Don't just name titles. Demonstrate:
 - For films/shows: `search_youtube()`, embed a trailer or video essay
 - For books: `search_book_content()` if available, or find an author interview
 - For anime: `search_youtube()`, embed the opening sequence
+- For games: `search_youtube()`, embed a gameplay clip, and give the completion time from `get_details`
 
 ### Step 5: Present the Recommendations
 

@@ -107,6 +107,10 @@ Synthesize everything into a profile, if this collection were a person, who woul
 | Albums | [n] | [n] | [n] | [n]/5 |
 | Shows | [n] | [n] | [n] | [n]/5 |
 | Anime | [n] | [n] | [n] | [n]/5 |
+| Podcasts | [n] | [n] | [n] | [n]/5 |
+| Games | [n] | [n] | [n] | [n]/5 |
+
+Include only the rows where the user has items. Games count "played" as completed; podcasts and the rest follow their own status vocabulary.
 
 ### What Your Collection Says
 

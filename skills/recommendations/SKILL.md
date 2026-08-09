@@ -1,6 +1,6 @@
 ---
 name: recommendations
-description: Cross-media recommendation methodology. Use when suggesting what to read, watch, or listen to next. Considers mood, themes, and patterns across all media types. Triggers on "what should I..." or "recommend" questions.
+description: Cross-media recommendation methodology. Use when suggesting what to read, watch, listen to, or play next. Considers mood, themes, and patterns across all seven media types. Triggers on "what should I..." or "recommend" questions.
 ---
 
 # Recommendations
@@ -35,10 +35,13 @@ get_timeline(media_type)  # Recent engagement
 ```
 
 ### 3. Find Unread/Unwatched Gems
-Search for items with matching themes that are still `unread`, `unwatched`, or `unheard`:
+Search for items with matching themes the user has not started. The status word varies by type: `unread` for books, `unwatched` for movies, shows, and anime, `unheard` for albums, `unplayed` for games. Podcasts use `want_to_listen` through `get_by_status`.
 ```
 search(media_type="book", query="theme", filter="unread")
+search(media_type="game", query="theme", filter="unplayed")
+get_by_status(media_type="podcast", status="want_to_listen")
 ```
+For games, weigh the completion time from `get_details`. A recommendation that costs 60 hours needs a better reason than one that costs 8.
 
 ### 4. Cross-Media Bridge
 If they loved a book, search films:

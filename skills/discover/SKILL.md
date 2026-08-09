@@ -5,6 +5,7 @@ argument-hint: "<theme, mood, or question>"
 allowed-tools:
   - mcp__plugin_achriom_achriom__get_stats
   - mcp__plugin_achriom_achriom__search
+  - mcp__plugin_achriom_achriom__search_library
   - mcp__plugin_achriom_achriom__get_details
   - mcp__plugin_achriom_achriom__get_by_rating
   - mcp__plugin_achriom_achriom__get_timeline
@@ -17,7 +18,7 @@ allowed-tools:
 
 # /discover: Follow a Thread Across Your Library
 
-Take a theme, mood, or idea and trace it through everything you own. Books, films, albums, shows, anime, find where the thread appears across media.
+Take a theme, mood, or idea and trace it through everything you own. Books, films, albums, shows, anime, podcasts, games, find where the thread appears across media.
 
 ## Invocation
 
@@ -53,6 +54,9 @@ search(media_type="movie", query="theme")
 search(media_type="album", query="theme")
 search(media_type="show", query="theme")
 search(media_type="anime", query="theme")
+search(media_type="podcast", query="theme")
+search(media_type="game", query="theme")
+search_library(query="theme")                        # All seven types at once, by meaning
 get_by_rating(min_rating=4)                          # Top-rated for pattern matching
 get_timeline()                                       # Temporal patterns
 get_signals()                                        # Behavioral patterns

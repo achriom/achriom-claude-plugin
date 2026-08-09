@@ -10,14 +10,14 @@
       "name": "achriom",
       "displayName": "Achriom",
       "source": "./",
-      "description": "Personal librarian for your media collection. Deep analysis of books, movies, albums, TV shows, and anime with cross-media recommendations and pattern recognition.",
+      "description": "Personal librarian for your media collection. Deep analysis of books, movies, albums, TV shows, anime, podcasts, and games with curated lists, cross-media recommendations, and pattern recognition.",
       "author": {
         "name": "Achriom",
         "email": "hello@achriom.com"
       },
       "homepage": "https://achriom.com",
       "repository": "https://github.com/achriom/achriom-claude-plugin",
-      "keywords": ["books", "movies", "music", "tv", "anime", "media", "library", "recommendations"],
+      "keywords": ["books", "movies", "music", "tv", "anime", "podcasts", "games", "media", "library", "lists", "recommendations"],
       "category": "productivity"
     }
   ]

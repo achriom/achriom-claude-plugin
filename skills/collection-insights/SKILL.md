@@ -34,7 +34,10 @@ Search across all media types for common threads:
 search(media_type="book", query="isolation")
 search(media_type="movie", query="isolation")
 search(media_type="album", query="isolation")
+search_library(query="isolation")   # book, movie, album, show, anime, podcast, game at once
 ```
+
+`search` matches literal keywords in one media type. `search_library` searches by meaning across all seven, so reach for it when the wording of a theme will not appear verbatim in any field.
 
 ### 3. Identify Patterns
 
@@ -65,7 +68,7 @@ Gaps are as revealing as presences.
 
 ## Insight Patterns
 
-**The throughline:** "Across books, films, and music, you keep returning to stories about [theme]. It shows up in [examples]..."
+**The throughline:** "Across books, films, music, and games, you keep returning to stories about [theme]. It shows up in [examples]..."
 
 **The evolution:** "Your earlier additions lean [direction], but recently you've moved toward [new direction]..."
 

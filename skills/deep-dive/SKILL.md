@@ -1,6 +1,6 @@
 ---
 name: deep-dive
-description: Deep analysis of a specific book, film, album, show, or anime in your collection
+description: Deep analysis of a specific book, film, album, show, anime, podcast, or game in your collection
 argument-hint: "<title or topic>"
 allowed-tools:
   - mcp__plugin_achriom_achriom__search
@@ -44,7 +44,7 @@ If the user specified a particular angle ("the cinematography in..."), note that
 
 ### Step 2: Gather Context
 
-Using the appropriate media-specific analysis skill (**book-analysis**, **movie-analysis**, **music-analysis**, **show-analysis**, or **anime-analysis**):
+Using the appropriate media-specific analysis skill (**book-analysis**, **movie-analysis**, **music-analysis**, **show-analysis**, **anime-analysis**, or **games-analysis**):
 
 **For books:**
 ```
@@ -83,6 +83,21 @@ get_details(media_type="anime", title="...")
 search_youtube(query="anime title opening")
 search_youtube(query="anime title sakuga analysis")
 search(media_type="anime", query="studio name")
+```
+
+**For podcasts:**
+```
+get_details(media_type="podcast", title="...")
+search(media_type="podcast", query="host or subject")
+search_youtube(query="podcast title interview")
+```
+
+**For games:**
+```
+get_details(media_type="game", title="...")
+search_youtube(query="game title design retrospective")
+search(media_type="game", query="developer name")
+search(media_type="game", query="franchise name")
 ```
 
 ### Step 3: Find Collection Connections
@@ -145,6 +160,7 @@ your notes about [X], I think what grabbed you was..."]
 
 - For albums, ALWAYS play track previews. The analysis should be accompanied by the actual music.
 - For anime, embed the opening, it's often a work of art in itself
+- For games, give the completion time from `time_to_beat` whenever the analysis touches whether to start it
 - If the user has notes on the item, incorporate them. Their perspective is part of the analysis.
 - Don't try to cover everything. Go deep on 2-3 angles rather than shallow on 8.
 - If the item isn't in their collection, the "In Your Collection" section becomes "What This Connects To", reference items they DO own

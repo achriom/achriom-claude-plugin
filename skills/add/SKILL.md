@@ -1,6 +1,6 @@
 ---
 name: add
-description: Fast library intake. Add books, movies, albums, shows, anime, or podcasts you name, with correct identification and optional status in one pass
+description: Fast library intake. Add books, movies, albums, shows, anime, podcasts, or games you name, with correct identification and optional status in one pass
 argument-hint: "<titles, or 'I just finished X'>"
 allowed-tools:
   - mcp__plugin_achriom_achriom__lookup_item
@@ -33,6 +33,8 @@ Gather everything named, including works mentioned earlier in the conversation w
 
 - Three or fewer items: `lookup_item(media_type, title)` per item, then `add_item` with the returned external_id for an exact match.
 - Four or more: `bulk_add_items`.
+
+Media types: book, movie, album, show, anime, podcast, game. Use anime for Japanese animation and show for live-action or Western series. For games, `add_item` also accepts `platform` (the hardware they own it on) and `format` (physical or digital); pass them whenever the user mentions either.
 
 ### Step 2: Disambiguate Only When It Matters
 

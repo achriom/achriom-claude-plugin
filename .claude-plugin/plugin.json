@@ -1,7 +1,7 @@
 {
   "name": "achriom",
-  "version": "1.1.0",
-  "description": "Personal librarian for your media collection. Deep analysis of books, movies, albums, TV shows, and anime with cross-media recommendations and pattern recognition.",
+  "version": "1.2.0",
+  "description": "Personal librarian for your media collection. Deep analysis of books, movies, albums, TV shows, anime, podcasts, and games with curated lists, cross-media recommendations, and pattern recognition.",
   "author": {
     "name": "Achriom",
     "email": "hello@achriom.com"
@@ -14,8 +14,11 @@
     "music",
     "tv",
     "anime",
+    "podcasts",
+    "games",
     "media",
     "library",
+    "lists",
     "recommendations"
   ]
 }

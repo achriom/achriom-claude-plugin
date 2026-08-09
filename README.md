@@ -1,8 +1,8 @@
 # Achriom
 
-The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, and anime, tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
+The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, anime, podcasts, and games, tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-**36 tools** · **15 skills** · **5 slash commands** · **5 media types** · **Free for all accounts**
+**43 tools** · **20 skills** · **9 slash commands** · **7 media types** · **Free for all accounts**
 
 ---
 
@@ -32,7 +32,8 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | `music-analysis` | Albums, sound, production |
 | `show-analysis` | Series structure, seasonal arcs, ensemble dynamics |
 | `anime-analysis` | Studios, sakuga, adaptation, cultural context |
-| `recommendations` | "What should I read/watch next?" questions |
+| `games-analysis` | Design, systems, developers, franchises, playtime |
+| `recommendations` | "What should I read/watch/play next?" questions |
 | `collection-insights` | Pattern recognition across your full library |
 | `focused-research` | Deep study on a curated subset of items |
 | `stop-slop` | Writing quality filter, always on |
@@ -42,10 +43,14 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | Command | Description |
 |---------|-------------|
 | `/achriom:recommend` | Personalized recommendation by mood, theme, or similarity |
-| `/achriom:deep-dive` | Full analysis of a specific book, film, album, show, or anime |
+| `/achriom:deep-dive` | Full analysis of a specific book, film, album, show, anime, podcast, or game |
 | `/achriom:discover` | Trace a theme or idea across your entire collection |
 | `/achriom:research` | Focused deep-study mode on a curated subset |
 | `/achriom:collection-review` | Full library audit, patterns, taste profile, gaps |
+| `/achriom:add` | Fast intake of whatever you name, identified correctly |
+| `/achriom:watched` | Episode-level TV tracking and catch-up |
+| `/achriom:lists` | Save, read, and edit curated cross-media lists |
+| `/achriom:portrait` | Your Taste Portrait, read back to you |
 
 ---
 
@@ -86,10 +91,12 @@ Get your key from [account settings](https://app.achriom.com/settings).
 
 ## What the Tools Do
 
-- **Search**: by title, creator, genre, theme, mood, or rating
+- **Search**: by title, creator, genre, theme, mood, or rating, in one media type or across all seven by meaning
 - **Item details**: full metadata with AI analysis and your notes
 - **Collection stats**: patterns across ratings, genres, themes, eras
 - **Read and write**: update ratings, status, notes, format, priority, and progress from any client
+- **Lists**: build named cross-media lists, add and remove items, read them back in order. Lists are private, and the Achriom app can turn one into a share link
+- **Games**: platforms, developer, franchise, game modes, time to beat, and a play status of its own (unplayed, playing, played, saved, on hold, abandoned)
 - **Edit and delete**: correct metadata, remove items, re-fetch AI analysis
 - **Consumption tracking**: log re-reads, rewatches, and re-listens with dates
 - **Bulk operations**: add or update multiple items at once
@@ -98,11 +105,13 @@ Get your key from [account settings](https://app.achriom.com/settings).
 - **YouTube search**: trailers, interviews, video essays
 - **Book search**: semantic search inside uploaded EPUBs and PDFs
 
+Metadata sources: Open Library for books, TMDB for movies, TVDB for shows, Discogs for albums, AniList for anime, and IGDB for games. Games metadata is powered by IGDB.com.
+
 ---
 
 ## Requirements
 
-Free Achriom account required. MCP access included on all plans. Pro removes the 50-message cap.
+Free Achriom account required. MCP access is included on every plan. The monthly cap applies to librarian chat inside the Achriom app: 10 messages on Free, 200 on Pro.
 
 [Sign up](https://app.achriom.com/login) · [Settings](https://app.achriom.com/settings) · [Support](mailto:hello@achriom.com)
 
