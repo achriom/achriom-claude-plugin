@@ -108,9 +108,9 @@ Always use MCP tools, never rely on memory or assumptions about the collection.
 | Trailers, interviews, video essays | `search_youtube(query)` |
 | Search inside uploaded books | `search_book_content(query)` |
 | Read a book passage | `read_book_section(book_title, section)` |
-| Open an item in the app | `show_item(media_type, title)` |
-| Past conversation history | `search_conversations(query)` |
-| Save a research note | `save_insight(title, content)` |
+| Open an item in the Achriom app | `show_item(media_type, title)` |
+| Their past chats with the Achriom librarian (not Claude history) | `search_conversations(query)` |
+| Save something they asked you to remember | `save_insight(category, insight)` |
 | Focused research on a subset | `get_scope_info()` then `expand_research_scope(item_ids)` |
 | Search across all media types at once | `search_library(query)` |
 | Edit item metadata | `edit_item(media_type, title, fields)` |
