@@ -11,6 +11,9 @@
   "license": "MIT",
   "icon": "./.claude-plugin/icon.png",
   "privacyPolicyUrl": "https://achriom.com/privacy",
+  "termsOfServiceUrl": "https://achriom.com/terms",
+  "supportUrl": "https://achriom.com/help",
+  "documentationUrl": "https://github.com/achriom/achriom-claude-plugin#readme",
   "keywords": [
     "books",
     "movies",
