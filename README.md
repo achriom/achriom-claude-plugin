@@ -113,6 +113,29 @@ Metadata sources: Open Library for books, TMDB for movies, TVDB for shows, Disco
 
 ---
 
+## Try It
+
+Three prompts that show the core of it (with a few items in your library):
+
+1. **Build and read the library:** "Add Piranesi, In Rainbows and the film Arrival, then tell me what those three have in common."
+2. **Recommendations with a reason:** "/achriom:recommend something like Blade Runner, but a book."
+3. **A dated diary:** "I rewatched Heat last night and finished The Wire back in 2019. Log both, then show me my last five additions."
+
+More: "/achriom:deep-dive OK Computer", "/achriom:discover memory across everything I own", "/achriom:lists start a list called Rainy Sunday with Paterson and Blue Velvet", "/achriom:watched where was I on Severance?"
+
+## Troubleshooting
+
+- **The tools do not appear.** Open Settings, then Connectors (or Plugins) and check Achriom shows as connected. If not, remove it and add it again, then sign in.
+- **"Authentication required" or a sign-in loop.** Sign out of the connector and connect again; the sign-in is your Achriom account (Apple, Google or email).
+- **A title lands on the wrong edition or film.** Ask the librarian to look it up first ("look up Dune, the 1984 film"). When a title is ambiguous the tools return the candidates and change nothing; say which one you meant.
+- **Something still does not work.** Write to [hello@achriom.com](mailto:hello@achriom.com) with what you asked and roughly when.
+
+## Privacy and Support
+
+- **Privacy policy:** [achriom.com/privacy](https://achriom.com/privacy). The connector reads and writes only your own Achriom library. It does not read your Claude conversations, memory or files; it sees only what Claude sends in a tool call.
+- **Terms:** [achriom.com/terms](https://achriom.com/terms)
+- **Support and security reports:** [hello@achriom.com](mailto:hello@achriom.com)
+
 ## Requirements
 
 Free Achriom account required. MCP access is included on every plan. The monthly cap applies to librarian chat inside the Achriom app: 10 messages on Free, 200 on Pro.
