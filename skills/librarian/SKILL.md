@@ -37,6 +37,12 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__set_priority
   - mcp__plugin_achriom_achriom__set_progress
   - mcp__plugin_achriom_achriom__log_event
+  - mcp__plugin_achriom_achriom__bulk_log_events
+  - mcp__plugin_achriom_achriom__set_dates
+  - mcp__plugin_achriom_achriom__delete_event
+  - mcp__plugin_achriom_achriom__clear_rating
+  - mcp__plugin_achriom_achriom__get_recently_added
+  - mcp__plugin_achriom_achriom__get_recommendations
   - mcp__plugin_achriom_achriom__create_list
   - mcp__plugin_achriom_achriom__add_to_list
   - mcp__plugin_achriom_achriom__remove_from_list
@@ -83,11 +89,18 @@ Always use MCP tools, never rely on memory or assumptions about the collection.
 | Add several at once | `bulk_add_items([{media_type, title}, ...])` |
 | Update read/watch/listen status | `update_status(media_type, title, status)` |
 | Set a rating | `update_rating(media_type, title, rating)` |
+| Remove a rating | `clear_rating(media_type, title)` |
 | Add personal notes | `update_notes(media_type, title, notes)` |
 | Items above a rating threshold | `get_by_rating(media_type, min_rating)` |
 | Items by status | `get_by_status(media_type, status)` |
-| Recent additions or completions | `get_timeline(media_type)` |
+| Reading/watching history by date | `get_timeline(media_type)` |
+| What they added most recently | `get_recently_added(limit, media_type)` |
 | Taste signals and patterns | `get_signals()` |
+| What people with overlapping taste also keep | `get_recommendations()` or `get_recommendations(based_on=title)` |
+| Log a finish, re-read or rewatch with a date | `log_event(media_type, title, event_type, event_date)` |
+| Log many dated finishes at once (up to 250) | `bulk_log_events([{media_type, title, event_date}, ...])` |
+| Set or fix started, finished, or added dates | `set_dates(media_type, title, started_at, finished_at, added_at)` |
+| Undo a logged event | `delete_event(media_type, title, event_date)` |
 | User taste profile | `get_user_profile()` |
 | Something random | `random_pick(media_type)` |
 | Album track previews (in collection) | `get_track_previews(media_type="album", title)` |
@@ -111,6 +124,10 @@ Always use MCP tools, never rely on memory or assumptions about the collection.
 | Put an item on a list (creates it if new) | `add_to_list(list_name, media_type, title, note)` |
 | Start a named list to fill later | `create_list(name, description)` |
 | Take an item off a list | `remove_from_list(list_name, title)` |
+
+**Exact items.** Every tool that acts on one item accepts `item_id` as well as `title`. When a title is ambiguous, a write returns the candidates with their ids and changes nothing: pick the right one (ask if it is not obvious) and repeat the call with `item_id`. Never guess between two editions or two films of the same name.
+
+**Dates.** Dates accept `YYYY-MM-DD`, `YYYY-MM`, or `YYYY`. When someone only knows the year, pass the year; it is kept as a year, not turned into January 1st.
 
 ## Skill Activation
 

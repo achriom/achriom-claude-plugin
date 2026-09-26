@@ -2,7 +2,7 @@
 
 The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, anime, podcasts, and games, tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-**43 tools** · **20 skills** · **9 slash commands** · **7 media types** · **Free for all accounts**
+**48 tools** · **20 skills** · **9 slash commands** · **7 media types** · **Free for all accounts**
 
 ---
 
@@ -48,7 +48,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | `/achriom:research` | Focused deep-study mode on a curated subset |
 | `/achriom:collection-review` | Full library audit, patterns, taste profile, gaps |
 | `/achriom:add` | Fast intake of whatever you name, identified correctly |
-| `/achriom:watched` | Episode-level TV tracking and catch-up |
+| `/achriom:watched` | Log what you watched with dates: episodes, rewatches, where you left off |
 | `/achriom:lists` | Save, read, and edit curated cross-media lists |
 | `/achriom:portrait` | Your Taste Portrait, read back to you |
 
@@ -79,13 +79,13 @@ Install the official Achriom app from the [ChatGPT app store](https://chatgpt.co
 
 ## Other MCP Clients
 
-For Cursor, Windsurf, Claude Desktop, and any HTTP MCP client that does not support OAuth:
+Any MCP client that connects to remote servers with OAuth (Claude Code, Cursor, and others) can use the same URL and sign in with your Achriom account:
 
 ```
-https://mcp.achriom.com/mcp?api_key=YOUR_KEY
+https://mcp.achriom.com/mcp
 ```
 
-Get your key from [account settings](https://app.achriom.com/settings).
+In Claude Code: `claude mcp add --transport http achriom https://mcp.achriom.com/mcp`, then sign in when prompted.
 
 ---
 
@@ -98,7 +98,11 @@ Get your key from [account settings](https://app.achriom.com/settings).
 - **Lists**: build named cross-media lists, add and remove items, read them back in order. Lists are private, and the Achriom app can turn one into a share link
 - **Games**: platforms, developer, franchise, game modes, time to beat, and a play status of its own (unplayed, playing, played, saved, on hold, abandoned)
 - **Edit and delete**: correct metadata, remove items, re-fetch AI analysis
-- **Consumption tracking**: log re-reads, rewatches, and re-listens with dates
+- **Recommendations**: what people with overlapping taste also keep, across all media or seeded from one title you own, drawn from other libraries in aggregate and never anyone's individual list
+- **A dated diary**: log finishes and re-reads, rewatches, and re-listens with dates (a year alone is kept as a year), set or fix started, finished, and added dates, and backfill up to 250 entries in one call
+- **Undo**: clear a rating, delete a logged event
+- **Recently added**: your library in the order you added it
+- **Exact matching**: every tool that acts on one item takes its id as well as its title; an ambiguous title returns the candidates and changes nothing
 - **Bulk operations**: add or update multiple items at once
 - **Random pick**: let the librarian choose something from your collection
 - **Apple Music previews**: 30-second samples inline

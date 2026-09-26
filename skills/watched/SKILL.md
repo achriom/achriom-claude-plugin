@@ -1,6 +1,6 @@
 ---
 name: watched
-description: Episode-level TV tracking. Log what you watched, find where you left off, and see what episode is next across your shows
+description: Log what you watched, with dates. Episode-level TV tracking, rewatches of films and shows, where you left off, and what episode is next
 argument-hint: "<show and episodes, or 'where was I'>"
 allowed-tools:
   - mcp__plugin_achriom_achriom__mark_tv_watched
@@ -8,6 +8,10 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__get_by_status
   - mcp__plugin_achriom_achriom__lookup_item
   - mcp__plugin_achriom_achriom__add_item
+  - mcp__plugin_achriom_achriom__log_event
+  - mcp__plugin_achriom_achriom__set_dates
+  - mcp__plugin_achriom_achriom__delete_event
+  - mcp__plugin_achriom_achriom__update_status
 ---
 
 # /watched: Keep the Watch State True
@@ -21,6 +25,8 @@ Episode-level tracking with the friction of a sentence, like a friend keeping sc
 /watched Andor through S2E5
 /watched where was I on Silo?
 /watched what should I catch up on
+/watched Heat again last night
+/watched finished The Wire back in 2019
 ```
 
 ## Workflow
@@ -53,7 +59,19 @@ get_by_status(media_type="show", status="watching")
 
 List their in-progress shows compactly, next episode each, then update whichever they name.
 
-### Step 4: Unknown Show
+### Step 4: Films, Rewatches, and Dates
+
+A film they finished for the first time is a status: `update_status(media_type="movie", title, status="watched")`, plus `set_dates(..., finished_at=...)` when they said when.
+
+A rewatch ("watched Heat again", "rewatched all of Twin Peaks") is an event, so it shows in their history without erasing the first time:
+
+```
+log_event(media_type, title, event_type="rewatched", event_date="2026-09-25")
+```
+
+When they only know roughly when ("back in 2019"), pass the year alone; it is kept as a year. To fix a date, `set_dates`; to take back a log, `delete_event` (with more than one event on the item it lists them with ids first).
+
+### Step 5: Unknown Show
 
 If a named show is not in the library: `lookup_item`, then `add_item`, confirm in half a line, and continue the check-in in the same turn.
 

@@ -10,6 +10,9 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__set_progress
   - mcp__plugin_achriom_achriom__mark_tv_watched
   - mcp__plugin_achriom_achriom__update_rating
+  - mcp__plugin_achriom_achriom__set_dates
+  - mcp__plugin_achriom_achriom__log_event
+  - mcp__plugin_achriom_achriom__bulk_log_events
   - mcp__plugin_achriom_achriom__get_stats
 ---
 
@@ -38,7 +41,7 @@ Media types: book, movie, album, show, anime, podcast, game. Use anime for Japan
 
 ### Step 2: Disambiguate Only When It Matters
 
-Ask ONE quick question when the wrong match would genuinely hurt (remakes, common titles, same-name works by different creators). Never stall a ten-item intake on one ambiguous title: add the nine, flag the one.
+Ask ONE quick question when the wrong match would genuinely hurt (remakes, common titles, same-name works by different creators). Never stall a ten-item intake on one ambiguous title: add the nine, flag the one. If a later write on a title comes back with candidates instead of a change, use the right one's `item_id`.
 
 ### Step 3: Carry the Context
 
@@ -49,7 +52,11 @@ update_status(media_type, title, status)
 set_progress(...)            # partway through a book
 mark_tv_watched(...)         # episodes watched
 update_rating(...)           # when they volunteered a verdict
+set_dates(media_type, title, finished_at="2024-03")   # when they said when; a year alone stays a year
+log_event(media_type, title, event_type, event_date)  # "read it again last summer": a repeat, not the first finish
 ```
+
+For a pasted history with dates (a reading log, a watch diary, an export), add the items, then send the dates in one `bulk_log_events` call (up to 250). Ambiguous titles are skipped and reported, never guessed; tell the user which ones and ask.
 
 ### Step 4: Confirm, Then Notice
 

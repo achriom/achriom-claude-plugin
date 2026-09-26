@@ -8,6 +8,7 @@ allowed-tools:
   - mcp__plugin_achriom_achriom__get_by_status
   - mcp__plugin_achriom_achriom__get_timeline
   - mcp__plugin_achriom_achriom__get_signals
+  - mcp__plugin_achriom_achriom__get_recommendations
   - mcp__plugin_achriom_achriom__get_context
   - mcp__plugin_achriom_achriom__search
   - mcp__plugin_achriom_achriom__get_details
@@ -46,9 +47,19 @@ Determine what the user is after:
 
 If the request is vague, ask one clarifying question. Only one. Then recommend.
 
-### Step 2: Mine the Collection
+### Step 2: Ask the Taste Graph, Then Mine the Collection
 
-Always check what they already own before suggesting anything new. Using the **recommendations** skill methodology:
+Start with what people whose libraries overlap theirs actually keep. It is real signal, not a guess:
+
+```
+get_recommendations()                          # Across all media, from everything they rated 4+ or finished
+get_recommendations(based_on="Blade Runner")   # "Something like X", seeded from a title they own
+get_recommendations(media_type="book")         # One kind of thing
+```
+
+With no arguments each pick names the titles of theirs that drove it; use those as the thread. Picks exclude what they already own and carry an `external_id` ready for `add_item`. The engine is a starting point, not the answer: choose among its picks with the mood or theme they asked for.
+
+Then check what they already own before suggesting anything new. Using the **recommendations** skill methodology:
 
 ```
 get_stats()                                    # Collection shape
@@ -76,7 +87,7 @@ For each recommendation (aim for 2-3):
 Prioritize in this order:
 1. Items they own but haven't explored yet
 2. Cross-media connections within their collection
-3. New items that fit their established taste
+3. New items from `get_recommendations` that fit the request
 4. Stretch picks that expand their range
 
 ### Step 4: Make It Tangible

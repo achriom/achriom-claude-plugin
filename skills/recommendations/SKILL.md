@@ -26,7 +26,10 @@ description: Cross-media recommendation methodology. Use when suggesting what to
 ### 1. Understand the Request
 What are they really asking for? Mood? Theme? Similar to something specific?
 
-### 2. Check Their Collection
+### 2. Ask What Overlapping Libraries Keep
+`get_recommendations()` returns what people with overlapping taste also liked, across media, each with the titles of theirs that drove it. `get_recommendations(based_on=title)` seeds from one thing they own ("people who loved this also kept"). It excludes what they have and never exposes anyone's individual list. Treat it as evidence to choose from, then shape the pick to the mood.
+
+### 3. Check Their Collection
 ```
 get_stats()  # Overall shape
 get_by_rating(media_type, min_rating=4)  # What they love
@@ -34,7 +37,7 @@ search(media_type, query="relevant theme")
 get_timeline(media_type)  # Recent engagement
 ```
 
-### 3. Find Unread/Unwatched Gems
+### 4. Find Unread/Unwatched Gems
 Search for items with matching themes the user has not started. The status word varies by type: `unread` for books, `unwatched` for movies, shows, and anime, `unheard` for albums, `unplayed` for games. Podcasts use `want_to_listen` through `get_by_status`.
 ```
 search(media_type="book", query="theme", filter="unread")
@@ -43,14 +46,14 @@ get_by_status(media_type="podcast", status="want_to_listen")
 ```
 For games, weigh the completion time from `get_details`. A recommendation that costs 60 hours needs a better reason than one that costs 8.
 
-### 4. Cross-Media Bridge
+### 5. Cross-Media Bridge
 If they loved a book, search films:
 ```
 search(media_type="movie", query="theme from book")
 ```
 Make explicit connections: "The melancholy in [book] shows up visually in [film]..."
 
-### 5. Research New Suggestions
+### 6. Research New Suggestions
 If nothing in collection fits, research:
 ```
 tavily-search(query="books similar to [title] theme")
