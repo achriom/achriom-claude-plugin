@@ -2,13 +2,13 @@
 
 The media memory layer for AI agents and their humans. Books, movies, albums, TV shows, anime, podcasts, and games, tracked, analyzed, and searchable from Claude, ChatGPT, or any MCP client.
 
-**48 tools** · **20 skills** · **9 slash commands** · **7 media types** · **Free for all accounts**
+**48 tools** · **20 skills** (9 you can call by name) · **7 media types** · **Free for all accounts**
 
 ---
 
 ## Claude Plugin (Recommended)
 
-The full librarian experience, skills, slash commands, and your collection, in one install.
+The full librarian experience, skills and your collection, in one install.
 
 ### Install
 
@@ -38,7 +38,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 | `focused-research` | Deep study on a curated subset of items |
 | `stop-slop` | Writing quality filter, always on |
 
-**Slash commands:**
+**Skills you can call by name** (type them, or just ask in your own words):
 
 | Command | Description |
 |---------|-------------|
@@ -56,7 +56,7 @@ Sign in with your Achriom account when prompted. No API keys or manual config ne
 
 ## Claude.ai Connector (Tools Only)
 
-MCP tools without the librarian skills and slash commands.
+MCP tools without the librarian skills.
 
 1. Open **Settings** and go to **Connectors**
 2. Click **Add** and choose **Add custom connector**
